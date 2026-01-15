@@ -10,7 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { Home, User, Briefcase, Mail } from "lucide-react";
+import { User, Contact, FolderKanban } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/translations";
@@ -21,15 +21,20 @@ export function AppSidebar() {
 
   const items = [
     {
-      title: t.nav.home || "Home",
+      title: t.nav.about || "About",
       url: "/",
-      icon: Home,
+      icon: User,
     },
     {
-      title: t.nav.about || "About",
-      url: "/about",
-      icon: User,
-    }
+      title: t.nav.projects || "Projects",
+      url: "/projects",
+      icon: FolderKanban,
+    },
+    {
+      title: t.nav.contact || "Contact",
+      url: "/contact",
+      icon: Contact,
+    },
   ];
 
   return (

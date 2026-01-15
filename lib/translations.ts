@@ -6,14 +6,9 @@ export const translations = {
     },
     nav: {
       title: "Portfolio",
-      home: "Home",
-      about: "About me"
-    },
-    home: {
-      title: "Welcome to my Portfolio"
-    },
-    about: {
-      title: "About me"
+      about: "About me",
+      projects: "Projects",
+      contact: "Contact"
     }
   },
   es: {
@@ -23,14 +18,9 @@ export const translations = {
     },
     nav: {
       title: "Portfolio",
-      home: "Inicio",
-      about: "Acerca de mi"
-    },
-    home: {
-      title: "Bienvenido a mi Portfolio"
-    },
-    about: {
-      title: "Sobre Mí"
+      about: "Acerca de mi",
+      projects: "Proyectos",
+      contact: "Contacto"
     }
   }
 };
