@@ -6,24 +6,34 @@ type Language = "en" | "es";
 
 interface LanguageContextType {
   language: Language;
-  setLanguage: (lang: Language) => void;
+  setLanguage: (lang: string) => void;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>(() => {
-    // Inicializar desde localStorage en el estado inicial
-    if (typeof window !== "undefined") {
-      const savedLanguage = localStorage.getItem("language") as Language;
-      return savedLanguage || "es";
-    }
-    return "es";
-  });
+  const [language, setLanguage] = useState<Language>("es");
+  const [mounted, setMounted] = useState(false);
 
-  const handleSetLanguage = (lang: Language) => {
-    setLanguage(lang);
-    localStorage.setItem("language", lang);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMounted(true);
+      const savedLanguage = localStorage.getItem("language") as Language;
+      if (savedLanguage && (savedLanguage === "en" || savedLanguage === "es")) {
+        setLanguage(savedLanguage);
+      }
+    }, 0);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleSetLanguage = (lang: string) => {
+    if (lang === "en" || lang === "es") {
+      setLanguage(lang);
+      if (mounted) {
+        localStorage.setItem("language", lang);
+      }
+    }
   };
 
   return (

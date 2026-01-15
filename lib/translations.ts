@@ -5,13 +5,15 @@ export const translations = {
       label: "Select Language"
     },
     nav: {
-      title: "Portfolio"
+      title: "Portfolio",
+      home: "Home",
+      about: "About me"
     },
     home: {
       title: "Welcome to my Portfolio"
     },
     about: {
-      title: "About Me"
+      title: "About me"
     }
   },
   es: {
@@ -20,7 +22,9 @@ export const translations = {
       label: "Selecciona el idioma"
     },
     nav: {
-      title: "Portfolio"
+      title: "Portfolio",
+      home: "Inicio",
+      about: "Acerca de mi"
     },
     home: {
       title: "Bienvenido a mi Portfolio"
