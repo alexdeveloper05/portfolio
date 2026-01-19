@@ -2,10 +2,7 @@ import { ThemeProvider } from "next-themes"
 import "./globals.css"
 import type { Metadata } from "next";
 import { LanguageProvider } from "@/contexts/LanguageContext"
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/slideBar"
-import ThemeSelector from "@/components/themeSelector"
-import LenguajeSelector from "@/components/languageSelector"
+import Navbar from "@/components/navbar"
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -30,21 +27,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LanguageProvider>
-            <SidebarProvider>
-              <AppSidebar />
-              <main className="w-full">
-                <header className="border-b p-4 flex justify-between items-center">
-                  <SidebarTrigger />
-                  <div className="flex gap-2">
-                    <LenguajeSelector />
-                    <ThemeSelector />
-                  </div>
-                </header>
-                <div className="p-8">
-                  {children}
-                </div>
-              </main>
-            </SidebarProvider>
+            <Navbar />
+            <main className="container mx-auto px-4 py-8">
+              {children}
+            </main>
           </LanguageProvider>
         </ThemeProvider>
       </body>
