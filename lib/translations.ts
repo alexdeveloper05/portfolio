@@ -18,7 +18,10 @@ export const translations = {
         subtitle: "Developer & Cloud Infrastructure Specialist",
         content: "Cloud-native specialist with a systems administration background. I work with AWS and Kubernetes to build scalable infrastructure, and develop applications using TypeScript and Java."
       },
-      cv: "Download CV"
+      cv: "Download CV",
+      technologies: {
+        title: "Technologies"
+      }
     },
     contact: {
       title: "Contact",
@@ -59,7 +62,10 @@ export const translations = {
         subtitle: "Desarrollador y Especializado en Infraestructura Cloud",
         content: "Especialista en Cloud-native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable, y desarrollo aplicaciones usando TypeScript y Java."
       },
-      cv: "Descargar CV"
+      cv: "Descargar CV",
+      technologies: {
+        title: "Tecnologías"
+      }
     },
     contact: {
       title: "Contacto",
