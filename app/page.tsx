@@ -6,7 +6,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/translations";
 import LinkButton from "@/components/linkButton";
 import AboutMe from "@/components/aboutMeCard";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 export default function Home() {
   const { language } = useLanguage();
@@ -15,25 +15,28 @@ export default function Home() {
   return (
     <div>
       {/* Title */}
-      <div className="flex flex-1">
-        <p className="font-['Clash_Display'] text-6xl font-bold">
-          {t.about.title}
-        </p>
+      <div className="flex flex-col-reverse sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
+        <div className="text-center sm:text-left">
+          <p className="font-['Clash_Display'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+            {t.about.title}
+          </p>
+          {/* Subtitle */}
+          <p className="font-['Clash_Display'] font-medium mt-4 mb-8 text-sm sm:text-base">
+            {t.about.subtitle}
+          </p>
+        </div>
         <Image
           src={profile}
           alt="Profile image"
           width={130}
-          className="flex-shrink-0 rounded-full bg-gray-100"
+          height={130}
+          className="flex-shrink-0 rounded-full bg-gray-100 w-24 h-24 sm:w-32 sm:h-32"
         />
       </div>
-      {/* Subtitle */}
-      <p className="font-['Clash_Display'] font-medium mb-8">
-        {t.about.subtitle}
-      </p>
       {/* About me, linkedin and github */}
-      <div className="">
+      <div>
         {/* Buttons */}
-        <div className="">
+        <div className="flex flex-wrap justify-center sm:justify-start">
           <LinkButton
             href="https://github.com/alexdeveloper05"
             icon={FaGithub}
@@ -48,6 +51,14 @@ export default function Home() {
 
         {/* About me */}
         <AboutMe />
+
+        {/* Download cv */}
+        <LinkButton
+          href="/CV.pdf"
+          icon={FaDownload}
+          label={t.about.cv}
+          download
+        />
 
       </div>
 

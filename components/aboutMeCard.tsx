@@ -13,7 +13,7 @@ export default function AboutMe() {
     const t = translations[language];
 
   return (
-    <Card>
+    <Card className="mb-4">
       <CardHeader>
         <CardTitle>{t.about.card.title}</CardTitle>
         <CardDescription>{t.about.card.subtitle}</CardDescription>
