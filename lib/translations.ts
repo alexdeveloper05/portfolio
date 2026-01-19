@@ -19,6 +19,25 @@ export const translations = {
         content: "Cloud-native specialist with a systems administration background. I work with AWS and Kubernetes to build scalable infrastructure, and develop applications using TypeScript and Java."
       },
       cv: "Download CV"
+    },
+    contact: {
+      title: "Contact",
+      subtitle: "Get in touch with me",
+      form: {
+        name: "Name",
+        email: "Email",
+        message: "Message",
+        send: "Send Message",
+        sending: "Sending...",
+        success: "Message sent successfully!",
+        error: "Failed to send message. Please try again."
+      },
+      info: {
+        title: "Contact Info",
+        email: "Email",
+        location: "Location"
+      },
+      social: "Social Links"
     }
   },
   es: {
@@ -41,6 +60,25 @@ export const translations = {
         content: "Especialista en Cloud-native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable, y desarrollo aplicaciones usando TypeScript y Java."
       },
       cv: "Descargar CV"
+    },
+    contact: {
+      title: "Contacto",
+      subtitle: "Ponte en contacto conmigo",
+      form: {
+        name: "Nombre",
+        email: "Email",
+        message: "Mensaje",
+        send: "Enviar Mensaje",
+        sending: "Enviando...",
+        success: "Mensaje enviado correctamente!",
+        error: "Error al enviar el mensaje. Inténtalo de nuevo."
+      },
+      info: {
+        title: "Información de Contacto",
+        email: "Email",
+        location: "Ubicación"
+      },
+      social: "Redes Sociales"
     }
   }
 };
