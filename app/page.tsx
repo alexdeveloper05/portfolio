@@ -7,6 +7,7 @@ import { translations } from "@/lib/translations";
 import LinkButton from "@/components/linkButton";
 import AboutMe from "@/components/aboutMeCard";
 import Technologies from "@/components/technologies";
+import Experience from "@/components/experience";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 export default function Home() {
@@ -52,6 +53,9 @@ export default function Home() {
 
         {/* About me */}
         <AboutMe />
+
+        {/* Experience */}
+        <Experience />
 
         {/* Technologies */}
         <Technologies />
