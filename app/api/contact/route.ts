@@ -12,29 +12,22 @@ export async function POST(request: Request) {
       )
     }
 
-    // Configuración flexible para Gmail o cualquier SMTP
-    const transportConfig = process.env.SMTP_HOST
-      ? {
-          host: process.env.SMTP_HOST,
-          port: Number(process.env.SMTP_PORT) || 587,
-          secure: process.env.SMTP_SECURE === "true",
-          auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
-          },
-        }
-      : {
-          service: "gmail",
-          auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
-          },
-        }
+    // Configuración para Gmail SMTP
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || "smtp.gmail.com",
+      port: Number(process.env.SMTP_PORT) || 587,
+      secure: false,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+      tls: {
+        rejectUnauthorized: false
+      }
+    })
 
-    const transporter = nodemailer.createTransport(transportConfig)
-
-    const fromEmail = process.env.SMTP_FROM || process.env.SMTP_USER || process.env.EMAIL_USER
-    const toEmail = process.env.CONTACT_EMAIL || process.env.EMAIL_USER || "alexdeveloper2005@gmail.com"
+    const fromEmail = process.env.SMTP_FROM || process.env.SMTP_USER
+    const toEmail = process.env.CONTACT_EMAIL || process.env.SMTP_USER
 
     await transporter.sendMail({
       from: fromEmail,
@@ -61,8 +54,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: true })
   } catch (error) {
     console.error("Email error:", error)
+    const errorMessage = error instanceof Error ? error.message : "Unknown error"
     return NextResponse.json(
-      { error: "Failed to send email" },
+      { error: "Failed to send email", details: errorMessage },
       { status: 500 }
     )
   }
