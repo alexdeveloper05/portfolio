@@ -17,13 +17,12 @@ export default function Home() {
   return (
     <div>
       {/* Title */}
-      <div className="flex flex-col-reverse sm:flex-row items-center sm:items-start gap-6 sm:gap-8">
+      <div className="flex flex-col-reverse sm:flex-row items-center sm:justify-between gap-6 sm:gap-8 mb-8">
         <div className="text-center sm:text-left">
           <p className="font-['Clash_Display'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
             {t.about.title}
           </p>
-          {/* Subtitle */}
-          <p className="font-['Clash_Display'] font-medium mt-4 mb-8 text-sm sm:text-base">
+          <p className="font-['Clash_Display'] font-medium mt-4 text-sm sm:text-base text-muted-foreground">
             {t.about.subtitle}
           </p>
         </div>
@@ -32,25 +31,11 @@ export default function Home() {
           alt="Profile image"
           width={130}
           height={130}
-          className="flex-shrink-0 rounded-full bg-gray-100 w-24 h-24 sm:w-32 sm:h-32"
+          className="flex-shrink-0 rounded-full bg-gray-100 w-24 h-24 sm:w-32 sm:h-32 object-cover"
         />
       </div>
       {/* About me, linkedin and github */}
       <div>
-        {/* Buttons */}
-        <div className="flex flex-wrap justify-center sm:justify-start">
-          <LinkButton
-            href="https://github.com/alexdeveloper05"
-            icon={FaGithub}
-            label="GitHub"
-          />
-          <LinkButton
-            href="https://linkedin.com/in/álex-frías-angulo-34b1b3271"
-            icon={FaLinkedin}
-            label="LinkedIn"
-          />
-        </div>
-
         {/* About me */}
         <AboutMe />
 

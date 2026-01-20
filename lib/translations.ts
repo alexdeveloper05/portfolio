@@ -1,5 +1,15 @@
 export const translations = {
   en: {
+    personal: {
+      name: "Álex",
+      surname: "Frías",
+      fullName: "Álex Frías",
+      phone: "+34 696 840 096",
+      location: "Bilbao, Spain",
+      email: "alexdeveloper2005@gmail.com",
+      github: "github.com/alexdeveloper05",
+      linkedin: "linkedin.com/in/alex-frias-angulo"
+    },
     languageSelector: {
       button: "Language",
       label: "Select Language"
@@ -77,6 +87,16 @@ export const translations = {
     }
   },
   es: {
+    personal: {
+      name: "Álex",
+      surname: "Frías",
+      fullName: "Álex Frías",
+      phone: "+34 696 840 096",
+      location: "Bilbao, España",
+      email: "alexdeveloper2005@gmail.com",
+      github: "github.com/alexdeveloper05",
+      linkedin: "linkedin.com/in/alex-frias-angulo"
+    },
     languageSelector: {
       button: "Idioma",
       label: "Selecciona el idioma"
