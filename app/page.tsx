@@ -6,8 +6,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/translations";
 import LinkButton from "@/components/linkButton";
 import AboutMe from "@/components/aboutMeCard";
-import Technologies from "@/components/technologies";
 import Experience from "@/components/experience";
+import Education from "@/components/education";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 export default function Home() {
@@ -57,8 +57,8 @@ export default function Home() {
         {/* Experience */}
         <Experience />
 
-        {/* Technologies */}
-        <Technologies />
+        {/* Education */}
+        <Education />
 
         {/* Download cv */}
         <LinkButton

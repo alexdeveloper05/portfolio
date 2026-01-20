@@ -21,10 +21,39 @@ export const translations = {
       cv: "Download CV",
       experience: {
         title: "Experience",
-        subtitle: "My professional journey"
+        subtitle: "My professional journey",
+        job1: {
+          title: "Cloud System Maintainer",
+          companyName: "Inetum",
+          description: "Assisted in maintaining cloud systems, troubleshooting memory issues and resolving incidents in virtual machine environments."
+        },
+        job2: {
+          title: "IT and Cloud Technician",
+          companyName: "Zelestra",
+          description: ""
+        }
       },
       technologies: {
         title: "Technologies"
+      },
+      education: {
+        title: "Education",
+        subtitle: "My academic background",
+        degree1: {
+          title: "Digital Pre-press Technician",
+          institution: "Emilio Campuzano",
+          description: "This degree taught me to create digital designs using Adobe tools."
+        },
+        degree2: {
+          title: "Higher Vocational Degree in Network Systems Administration",
+          institution: "Almi",
+          description: "Acquired knowledge in systems administration, networking, hardware, and software development."
+        },
+        degree3: {
+          title: "Cloud Native Specialization",
+          institution: "Almi",
+          description: "Specialized training in AWS, software development, networking, machine learning, and cloud-native technologies."
+        }
       }
     },
     contact: {
@@ -69,10 +98,39 @@ export const translations = {
       cv: "Descargar CV",
       experience: {
         title: "Experiencia",
-        subtitle: "Mi trayectoria profesional"
+        subtitle: "Mi trayectoria profesional",
+        job1: {
+          title: "Técnico de sistemas Cloud",
+          companyName: "Inetum",
+          description: "Asistí en el mantenimiento de sistemas cloud, resolviendo problemas de memoria e incidencias en entornos de máquinas virtuales."
+        },
+        job2: {
+          title: "Técnico IT y Cloud",
+          companyName: "Zelestra",
+          description: "Almi"
+        }
       },
       technologies: {
         title: "Tecnologías"
+      },
+      education: {
+        title: "Educación",
+        subtitle: "Mi formación académica",
+        degree1: {
+          title: "Técnico en Preimpresión Digital",
+          institution: "Emilio Campuzano",
+          description: "Este grado me enseñó a crear diseños digitales usando herramientas de Adobe."
+        },
+        degree2: {
+          title: "Técnico Superior en Administración de Sistemas Informáticos en Red",
+          institution: "Almi",
+          description: "Adquirí conocimientos en administración de sistemas, redes, hardware y desarrollo de software."
+        },
+        degree3: {
+          title: "Especialización en Cloud Native",
+          institution: "Lemoncode",
+          description: "Formación especializada en AWS, desarrollo de software, redes, machine learning y tecnologías cloud-native."
+        }
       }
     },
     contact: {
