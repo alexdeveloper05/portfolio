@@ -40,7 +40,7 @@ export const translations = {
         job2: {
           title: "IT and Cloud Technician",
           companyName: "Zelestra",
-          description: ""
+          description: "Part of the team managing users and devices in Azure, app packaging in Intune, software installation, and equipment management among other tasks."
         }
       },
       technologies: {
@@ -141,7 +141,7 @@ export const translations = {
         job2: {
           title: "Técnico IT y Cloud",
           companyName: "Zelestra",
-          description: "Almi"
+          description: "Formé parte del equipo de gestión de usuarios y dispositivos en Azure, paquetización de apps en Intune, instalación de software y gestión de material entre otras cosas."
         }
       },
       technologies: {
