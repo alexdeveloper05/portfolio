@@ -40,7 +40,7 @@ export const translations = {
         job2: {
           title: "IT and Cloud Technician",
           companyName: "Zelestra",
-          description: "Part of the team managing users and devices in Azure, app packaging in Intune, software installation, and equipment management among other tasks."
+          description: "I was part of the user and device management team in Azure, handling app packaging in Intune, software installation, and equipment management, among other things."
         }
       },
       technologies: {
@@ -50,7 +50,7 @@ export const translations = {
         title: "Education",
         subtitle: "My academic background",
         degree1: {
-          title: "Digital Pre-press Technician",
+          title: "Digital pre-press Technician",
           institution: "Emilio Campuzano",
           description: "This degree taught me to create digital designs using Adobe tools."
         },
