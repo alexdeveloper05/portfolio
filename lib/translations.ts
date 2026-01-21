@@ -22,11 +22,11 @@ export const translations = {
     },
     about: {
       title: "Developer | Cloud Infrastructure",
-      subtitle: "Creating scalable solutions using microservices and cloud-native technologies",
+      subtitle: "Creating scalable solutions using microservices and Cloud Native technologies",
       card: {
         title: "About Me",
         subtitle: "Developer & Cloud Infrastructure Specialist",
-        content: "Cloud-native specialist with a systems administration background. I work with AWS and Kubernetes to build scalable infrastructure, and develop applications using TypeScript and Java."
+        content: "Cloud Native specialist with a systems administration background. I work with AWS and Kubernetes to build scalable infrastructure, and develop applications using TypeScript and Java."
       },
       cv: "Download CV",
       experience: {
@@ -62,7 +62,7 @@ export const translations = {
         degree3: {
           title: "Cloud Native Specialization",
           institution: "Almi",
-          description: "Specialized training in AWS, software development, networking, machine learning, and cloud-native technologies."
+          description: "Specialized training in AWS, software development, networking, machine learning, and Cloud Native technologies."
         }
       }
     },
@@ -123,11 +123,11 @@ export const translations = {
     },
     about: {
       title: "Desarrollador | Infraestructura Cloud",
-      subtitle: "Creando soluciones escalables usando microservicios y tecnología Cloud-Native",
+      subtitle: "Creando soluciones escalables usando microservicios y tecnología Cloud Native",
       card: {
         title: "Sobre Mí",
         subtitle: "Desarrollador y especializado en Infraestructura Cloud",
-        content: "Especialista en Cloud-native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable. Ademas desarrollo aplicaciones usando TypeScript y Java."
+        content: "Especialista en Cloud Native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable. Ademas desarrollo aplicaciones usando TypeScript y Java."
       },
       cv: "Descargar CV",
       experience: {
@@ -163,7 +163,7 @@ export const translations = {
         degree3: {
           title: "Especialización en Cloud Native",
           institution: "Lemoncode",
-          description: "Formación especializada en AWS, desarrollo de software, redes, machine learning y tecnologías cloud-native."
+          description: "Formación especializada en AWS, desarrollo de software, redes, machine learning y tecnologías Cloud Native."
         }
       }
     },
