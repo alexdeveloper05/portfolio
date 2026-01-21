@@ -123,11 +123,11 @@ export const translations = {
     },
     about: {
       title: "Desarrollador | Infraestructura Cloud",
-      subtitle: "Creando soluciones escalables usando microservicios y tecnología cloud native",
+      subtitle: "Creando soluciones escalables usando microservicios y tecnología Cloud-Native",
       card: {
         title: "Sobre Mí",
-        subtitle: "Desarrollador y Especializado en Infraestructura Cloud",
-        content: "Especialista en Cloud-native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable, y desarrollo aplicaciones usando TypeScript y Java."
+        subtitle: "Desarrollador y especializado en Infraestructura Cloud",
+        content: "Especialista en Cloud-native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable. Ademas desarrollo aplicaciones usando TypeScript y Java."
       },
       cv: "Descargar CV",
       experience: {
