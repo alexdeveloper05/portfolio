@@ -86,7 +86,7 @@ export default function Navbar() {
               </nav>
 
               {/* Mobile Theme & Language */}
-              <div className="flex gap-2 mt-8 sm:hidden">
+              <div className="flex justify-center gap-2 mt-8 pt-4 border-t sm:hidden">
                 <LenguajeSelector />
                 <ThemeSelector />
               </div>

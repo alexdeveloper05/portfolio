@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { SiAmazonwebservices, SiVmware, SiLinux } from "react-icons/si"
-import { FaNetworkWired, FaCloud, FaMicrosoft } from "react-icons/fa"
+import { FaCloud, FaMicrosoft, FaWindows } from "react-icons/fa"
 import { Badge } from "@/components/ui/badge"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { translations } from "@/lib/translations"
@@ -24,9 +24,9 @@ export default function Experience() {
       period: "2025 - Actually",
       description: t.about.experience.job2.description,
       technologies: [
-        { name: "AWS", icon: SiAmazonwebservices, color: "bg-orange-500/10 text-orange-500 hover:bg-orange-500/20" },
         { name: "Azure", icon: FaMicrosoft, color: "bg-blue-500/10 text-blue-500 hover:bg-blue-500/20" },
-        { name: "Networking", icon: FaNetworkWired, color: "bg-green-500/10 text-green-500 hover:bg-green-500/20" }
+        { name: "Intune", icon: FaWindows, color: "bg-cyan-500/10 text-cyan-500 hover:bg-cyan-500/20" },
+        { name: "Autopilot", icon: FaWindows, color: "bg-sky-500/10 text-sky-500 hover:bg-sky-500/20" }
       ]
     },
     {
