@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import nodemailer from "nodemailer"
+import { Resend } from "resend"
 
 export async function POST(request: Request) {
   try {
@@ -12,41 +12,22 @@ export async function POST(request: Request) {
       )
     }
 
-    // Verificar que las variables de entorno existen
-    if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
-      console.error("Missing SMTP credentials:", {
-        hasUser: !!process.env.SMTP_USER,
-        hasPass: !!process.env.SMTP_PASS,
-      })
+    if (!process.env.RESEND_API_KEY) {
+      console.error("Missing RESEND_API_KEY")
       return NextResponse.json(
         { error: "Server configuration error" },
         { status: 500 }
       )
     }
 
-    // Configuración para Gmail SMTP
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.gmail.com",
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: false,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-      tls: {
-        rejectUnauthorized: false
-      }
-    })
+    const resend = new Resend(process.env.RESEND_API_KEY)
+    const toEmail = process.env.CONTACT_EMAIL || "alexdeveloper2005@gmail.com"
 
-    const fromEmail = process.env.SMTP_FROM || process.env.SMTP_USER
-    const toEmail = process.env.CONTACT_EMAIL || process.env.SMTP_USER
-
-    await transporter.sendMail({
-      from: fromEmail,
+    await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
       to: toEmail,
       replyTo: email,
       subject: `Portfolio Contact: ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">
