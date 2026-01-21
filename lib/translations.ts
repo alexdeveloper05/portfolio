@@ -84,6 +84,20 @@ export const translations = {
         location: "Location"
       },
       social: "Social Links"
+    },
+    projects: {
+      title: "Projects",
+      subtitle: "Some of my personal projects",
+      viewCode: "View Code",
+      watchDemo: "Watch Demo",
+      project1: {
+        name: "MemoryCacheSystem",
+        description: "A simple terminal project to manage data as redis does."
+      },
+      project2: {
+        name: "SSChat",
+        description: "A real-time chat application with modern UI."
+      }
     }
   },
   es: {
@@ -109,7 +123,7 @@ export const translations = {
     },
     about: {
       title: "Desarrollador | Infraestructura Cloud",
-      subtitle: "Creando soluciones escalables usando micro-servicios y tecnología cloud native",
+      subtitle: "Creando soluciones escalables usando microservicios y tecnología cloud native",
       card: {
         title: "Sobre Mí",
         subtitle: "Desarrollador y Especializado en Infraestructura Cloud",
@@ -171,6 +185,20 @@ export const translations = {
         location: "Ubicación"
       },
       social: "Redes Sociales"
+    },
+    projects: {
+      title: "Proyectos",
+      subtitle: "Algunos de mis proyectos personales",
+      viewCode: "Ver Código",
+      watchDemo: "Ver Demo",
+      project1: {
+        name: "MemoryCacheSystem",
+        description: "Una aplicación de terminal de gestión de datos parecida a como lo hace Redis."
+      },
+      project2: {
+        name: "SSChat",
+        description: "Una aplicación de chat en tiempo real con interfaz moderna."
+      }
     }
   }
 };
