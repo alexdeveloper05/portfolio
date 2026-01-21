@@ -12,6 +12,18 @@ export async function POST(request: Request) {
       )
     }
 
+    // Verificar que las variables de entorno existen
+    if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
+      console.error("Missing SMTP credentials:", {
+        hasUser: !!process.env.SMTP_USER,
+        hasPass: !!process.env.SMTP_PASS,
+      })
+      return NextResponse.json(
+        { error: "Server configuration error" },
+        { status: 500 }
+      )
+    }
+
     // Configuración para Gmail SMTP
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || "smtp.gmail.com",
