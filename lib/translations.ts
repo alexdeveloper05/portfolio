@@ -162,7 +162,7 @@ export const translations = {
         },
         degree3: {
           title: "Especialización en Cloud Native",
-          institution: "Lemoncode",
+          institution: "Almi",
           description: "Formación especializada en AWS, desarrollo de software, redes, machine learning y tecnologías Cloud Native."
         }
       }
