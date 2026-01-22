@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { SiLinux } from "react-icons/si"
+import { VscAzure } from "react-icons/vsc";
 import { FaCloud, FaMicrosoft, FaWindows } from "react-icons/fa"
 import { Badge } from "@/components/ui/badge"
 import { useLanguage } from "@/contexts/LanguageContext"
@@ -24,8 +25,8 @@ export default function Experience() {
       period: "2025 - Actually",
       description: t.about.experience.job2.description,
       technologies: [
-        { name: "Azure", icon: FaMicrosoft, color: "bg-blue-500/10 text-blue-500 hover:bg-blue-500/20" },
-        { name: "Intune", icon: FaWindows, color: "bg-cyan-500/10 text-cyan-500 hover:bg-cyan-500/20" },
+        { name: "Azure", icon: VscAzure, color: "bg-blue-500/10 text-blue-500 hover:bg-blue-500/20" },
+        { name: "Intune", icon: FaMicrosoft, color: "bg-cyan-500/10 text-cyan-500 hover:bg-cyan-500/20" },
         { name: "Autopilot", icon: FaWindows, color: "bg-sky-500/10 text-sky-500 hover:bg-sky-500/20" }
       ]
     },

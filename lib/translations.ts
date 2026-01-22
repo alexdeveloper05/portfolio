@@ -26,7 +26,7 @@ export const translations = {
       card: {
         title: "About Me",
         subtitle: "Developer & Cloud Infrastructure Specialist",
-        content: "Cloud Native specialist with a systems administration background. I work with AWS and Kubernetes to build scalable infrastructure, and develop applications using TypeScript and Java."
+        content: "Cloud Native technician with a systems administration background. I work with AWS and Kubernetes to build scalable infrastructure, and develop applications using TypeScript and Java."
       },
       cv: "Download CV",
       experience: {
@@ -127,7 +127,7 @@ export const translations = {
       card: {
         title: "Sobre Mí",
         subtitle: "Desarrollador y especializado en Infraestructura Cloud",
-        content: "Especialista en Cloud Native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable. Ademas desarrollo aplicaciones usando TypeScript y Java."
+        content: "Técnico en Cloud Native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable. Ademas desarrollo aplicaciones usando TypeScript y Java."
       },
       cv: "Descargar CV",
       experience: {
