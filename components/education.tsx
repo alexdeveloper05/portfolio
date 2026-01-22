@@ -17,13 +17,12 @@ import {
   SiDocker,
   SiTerraform,
   SiReact,
-  SiOpenjdk,
   SiLinux,
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiAdobeindesign
 } from "react-icons/si"
-import { FaNetworkWired, FaServer, FaCode } from "react-icons/fa"
+import { FaNetworkWired, FaServer, FaCode, FaJava } from "react-icons/fa"
 
 export default function Education() {
   const { language } = useLanguage()
@@ -41,7 +40,7 @@ export default function Education() {
         { name: "Docker", icon: SiDocker, color: "bg-sky-500/10 text-sky-500 hover:bg-sky-500/20" },
         { name: "Terraform", icon: SiTerraform, color: "bg-purple-500/10 text-purple-500 hover:bg-purple-500/20" },
         { name: "React Native", icon: SiReact, color: "bg-cyan-500/10 text-cyan-500 hover:bg-cyan-500/20" },
-        { name: "Java", icon: SiOpenjdk, color: "bg-red-500/10 text-red-500 hover:bg-red-500/20" }
+        { name: "Java", icon: FaJava, color: "bg-red-500/10 text-red-500 hover:bg-red-500/20" }
       ]
     },
     {
