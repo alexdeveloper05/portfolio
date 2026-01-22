@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { SiLinux, SiAmazonwebservices } from "react-icons/si"
+import { SiLinux } from "react-icons/si"
 import { FaCloud, FaMicrosoft, FaWindows } from "react-icons/fa"
 import { Badge } from "@/components/ui/badge"
 import { useLanguage } from "@/contexts/LanguageContext"
@@ -35,7 +35,6 @@ export default function Experience() {
       period: "2025",
       description: t.about.experience.job1.description,
       technologies: [
-        { name: "AWS", icon: SiAmazonwebservices, color: "bg-orange-500/10 text-orange-500 hover:bg-orange-500/20" },
         { name: "Linux", icon: SiLinux, color: "bg-yellow-500/10 text-yellow-500 hover:bg-yellow-500/20" },
         { name: "Cloud", icon: FaCloud, color: "bg-sky-500/10 text-sky-500 hover:bg-sky-500/20" }
       ]

@@ -49,6 +49,7 @@ export default function Education() {
       period: "2023 - 2025",
       description: t.about.education.degree2.description,
       technologies: [
+        { name: "AWS", icon: SiAmazonwebservices, color: "bg-orange-500/10 text-orange-500 hover:bg-orange-500/20" },
         { name: "Linux", icon: SiLinux, color: "bg-yellow-500/10 text-yellow-500 hover:bg-yellow-500/20" },
         { name: "Networking", icon: FaNetworkWired, color: "bg-green-500/10 text-green-500 hover:bg-green-500/20" },
         { name: "Servers", icon: FaServer, color: "bg-gray-500/10 text-gray-500 hover:bg-gray-500/20" },
