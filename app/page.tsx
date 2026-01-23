@@ -47,7 +47,7 @@ export default function Home() {
 
         {/* Download cv */}
         <LinkButton
-          href="/cv-es.pdf"
+          href={language === "en" ? "/cv-en.pdf" : "/cv-es.pdf"}
           icon={FaDownload}
           label={t.about.cv}
           download

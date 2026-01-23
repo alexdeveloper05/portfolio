@@ -132,7 +132,7 @@ export default function Contact() {
                   label="LinkedIn"
                 />
                 <LinkButton
-                  href="/cv-es.pdf"
+                  href={language === "en" ? "/cv-en.pdf" : "/cv-es.pdf"}
                   icon={FaDownload}
                   label={t.about.cv}
                   download
