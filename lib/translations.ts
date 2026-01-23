@@ -127,7 +127,7 @@ export const translations = {
       card: {
         title: "Sobre Mí",
         subtitle: "Desarrollador y especializado en Infraestructura Cloud",
-        content: "Técnico en Cloud Native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable. Ademas desarrollo aplicaciones usando TypeScript y Java."
+        content: "Técnico en Cloud Native con background en administración de sistemas. Trabajo con AWS y Kubernetes para construir infraestructura escalable. Además, desarrollo aplicaciones usando TypeScript y Java."
       },
       cv: "Descargar CV",
       experience: {
