@@ -80,7 +80,6 @@ export default function Education() {
           <div key={index} className="border-l-2 border-primary pl-4">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
               <h3 className="font-semibold flex items-center gap-2">
-                <GraduationCap className="size-4" />
                 {edu.degree}
               </h3>
               <span className="text-sm text-muted-foreground">{edu.period}</span>
