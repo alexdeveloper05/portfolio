@@ -27,7 +27,7 @@ jobs:
 
       - name: Sync a S3
         run: |
-          aws s3 sync ./dist s3://tu-bucket-name --delete
+          aws s3 sync ./out s3://tu-bucket-name --delete
 
       - name: Invalidar CloudFront
         run: |
