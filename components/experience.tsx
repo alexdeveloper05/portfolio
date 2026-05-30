@@ -25,9 +25,9 @@ export default function Experience() {
       period: "2025 - Actually",
       description: t.about.experience.job2.description,
       technologies: [
-        { name: "Azure", icon: VscAzure, color: "bg-blue-500/10 text-blue-500 hover:bg-blue-500/20" },
-        { name: "Intune", icon: FaMicrosoft, color: "bg-cyan-500/10 text-cyan-500 hover:bg-cyan-500/20" },
-        { name: "Autopilot", icon: FaWindows, color: "bg-sky-500/10 text-sky-500 hover:bg-sky-500/20" }
+        { name: "Azure", icon: VscAzure, color: "bg-blue-500/20 text-blue-500 hover:bg-blue-500/25" },
+        { name: "Intune", icon: FaMicrosoft, color: "bg-cyan-500/20 text-cyan-500 hover:bg-cyan-500/25" },
+        { name: "Autopilot", icon: FaWindows, color: "bg-sky-500/20 text-sky-500 hover:bg-sky-500/25" }
       ]
     },
     {
@@ -36,8 +36,8 @@ export default function Experience() {
       period: "2025",
       description: t.about.experience.job1.description,
       technologies: [
-        { name: "Linux", icon: SiLinux, color: "bg-yellow-500/10 text-yellow-500 hover:bg-yellow-500/20" },
-        { name: "Cloud", icon: FaCloud, color: "bg-sky-500/10 text-sky-500 hover:bg-sky-500/20" }
+        { name: "Linux", icon: SiLinux, color: "bg-yellow-500/20 text-yellow-500 hover:bg-yellow-500/25" },
+        { name: "Cloud", icon: FaCloud, color: "bg-sky-500/20 text-sky-500 hover:bg-sky-500/25" }
       ]
     }
   ]
